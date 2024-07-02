@@ -1,3 +1,5 @@
+//Q: find the largest value
+
 package com.conditionals_and_loops;
 
 import javax.swing.*;
@@ -11,8 +13,7 @@ public class Largest {
         int a = in.nextInt();
         int b = in.nextInt();
         int c = in.nextInt();
-
-        //Q:
+// if
         int max = a;
         if (b > max){
             max = b;
@@ -21,6 +22,19 @@ public class Largest {
             max = c;
         }
 
-        System.out.println(max);
+
+// if else-if
+//        int max = 0;
+//        if (a>b){
+//            max = a;
+//        } else {
+//            max = b;
+//        }
+//        if (c > max){
+//            max = c;
+//        }
+
+//        int max = Math.max(c, Math.max(a,b));
+        System.out.println(Math.max(34, 57));
     }
 }

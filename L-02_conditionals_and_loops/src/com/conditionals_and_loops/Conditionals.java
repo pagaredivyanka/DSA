@@ -25,5 +25,15 @@ public class Conditionals {
             salary += 1000;
         }
         System.out.println(salary);
+
+
+        int a = 10;
+        int b = 20;
+
+        if (a == 10 && b == 20 || a != 35) {
+
+            System.out.println("Hello world");
+        }
+
     }
 }
