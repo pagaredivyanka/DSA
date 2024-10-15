@@ -1,6 +1,5 @@
 package com.L09_Strings_and_StringBuilder;
 
-import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class Output {
