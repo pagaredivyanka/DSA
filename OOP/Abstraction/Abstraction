@@ -1,0 +1,61 @@
+Abstraction -->
+
+Abstraction, hiding implementation details from user.
+
+In Java abstraction is achieved through both [abstract class] and [interface].
+Now that you have an option to choose, you must know when to use what.
+Let’s understand what is the difference between abstract class and interface in Java.
+
+Abstraction class --> partial abstraction
+Interface --> helps to achieve complete abstraction
+
+
+Parameter	                       Abstract Class	                      Interface
+Definition	               A class typically designed to               An interface is the blueprint
+                           be a parent class.                          of the class consisting of abstract methods
+                           All the other class inherits                Its consist the description
+                           the abstract class.	                       of the action that an object can perform.
+
+Declaration	               Declared using the keyword ‘abstract‘.	   Declared using the keyword ‘interface’
+
+Implementation	           provide the                                 Interface cannot provide the
+                           implementation detail of interface.	       implementation detail of abstract class
+
+Inheritance	               Abstract class can be inherited             Interface can be inherited
+                           using the keyword ‘extend’.	               using the keyword ‘implements’
+
+Multiple Inheritance	   Abstract class does does not                ** Interface supports
+                           support multiple inheritance	               multiple inheritance **
+
+Types of Methods	       Abstract class can have                     Interface can only have
+                           both abstract and non-abstract methods.	   abstract methods.
+
+Types of Variables	       Supports final, non-final,                  Supports only static and
+                           static, non-static variables	               final variables
+
+Example	                   public abstract class language {            public interface class language {
+                               public abstract void java();                void java();
+                           }                                           }
+
+
+
+* key differences between abstract classes and interfaces in Java:
+
+1. Abstract classes can have both abstract and non-abstract methods,
+    while interfaces can only have abstract methods.
+
+2. Abstract classes can contain instance variables, while interfaces cannot.
+
+3. A class can only extend one abstract class, but it can implement multiple interfaces.
+
+4. An abstract class can provide a partial implementation of its methods,
+    while an interface must provide a full implementation of its methods in any class that implements it.
+
+5. An abstract class can have constructors, while an interface cannot.
+
+6. An abstract class can be used to provide a common base class for a group of related classes,
+    while an interface is used to define a set of methods that must be implemented by a class.
+
+7. An abstract class is typically used when there is a common behavior or
+    implementation that needs to be shared among a group of related classes,
+    while an interface is used to define a set of behaviors that a class must implement.

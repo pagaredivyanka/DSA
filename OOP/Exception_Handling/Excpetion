@@ -1,0 +1,6 @@
+What is Exception in Java?
+Dictionary Meaning: Exception is an abnormal condition.
+
+In Java, an exception is an event that disrupts the normal flow of the program.
+It is an object which is thrown at runtime.
+
