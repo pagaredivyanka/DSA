@@ -11,7 +11,11 @@ you use the interface name as the data type.
 However, you cannot directly create an object of an interface because it lacks a concrete implementation.
 
 Instead, a reference variable of an interface can hold a reference to an object of a class that implements the interface.
+_________________________________________________________________________________
+
 Here’s how it works step by step:
+
+_________________________________________________________________________________
 
 Define an Interface:
 
@@ -30,8 +34,9 @@ class Dog implements Animal {
     }
 }
 
-Create a Reference Variable for the Interface:
+___________________________________________________________________________________________
 
+Create a Reference Variable for the Interface:
 
 Animal animal; // Interface reference variable
 
@@ -62,9 +67,9 @@ The implementation details can change without affecting the code that uses the i
 Rules and Considerations
 Cannot Instantiate an Interface Directly: You cannot create an object directly from an interface, like this:
 
-java
-Copy code
+code ---->
 Animal animal = new Animal(); // Compilation error
+
 This is because an interface does not have a constructor or any implementation code.
 
 Reference Variable Can Only Access Interface Methods: When using an interface reference variable,
@@ -72,8 +77,8 @@ you can only call the methods defined in the interface.
 If the implementing class has additional methods not specified in the interface,
 they cannot be accessed through the interface reference.
 
-java
-Copy code
+
+code -->
 Dog dog = new Dog();
 dog.makeSound(); // Allowed
 dog.wagTail();   // Allowed, assuming wagTail() is a Dog-specific method
@@ -81,14 +86,17 @@ dog.wagTail();   // Allowed, assuming wagTail() is a Dog-specific method
 Animal animal = dog;
 animal.makeSound(); // Allowed
 animal.wagTail();   // Compilation error, not part of the Animal interface
+
+
 Dynamic Method Dispatch: The method that gets called is determined at runtime based on the actual object type (not the reference type).
 This is known as dynamic method dispatch, which enables polymorphism in Java.
+
+________________________________________________________________________________________________________________
 
 Practical Example
 Let's look at a more complex example with multiple classes implementing the same interface:
 
-java
-Copy code
+code --->
 interface Shape {
     void draw();
 }
@@ -118,6 +126,10 @@ public class Main {
         shape.draw();            // Output: Drawing a Rectangle
     }
 }
+
+_______________________________________________________________________________________________________________
+
+
 Here, the Shape interface reference is used to point to different objects (Circle and Rectangle). The exact method that gets executed is determined at runtime.
 
 Summary
