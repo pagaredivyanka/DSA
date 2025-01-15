@@ -1,0 +1,89 @@
+Recursion -->
+1. This is function calling another function
+2. function body and definition of all functions is same
+3. use stack
+
+VVIMP -
+
+1.  while the function is not finished executing
+    it will remain in the stack.
+
+2.  for any Function -> When function finishes executing it is removed from stack and
+    flow of program is restored to where the function was called.
+
+3.  Base Condition in recursion ->
+        1. Condition where our recursion will stop making new calls
+        2. if no base condition -> function call will keep happening and stack will be getting filled again and again
+            and it will take memory again and again.
+            and at one point computer m/m exceeds the limit -> error -> stack overflow error
+
+
+Recursion -> Function calling itself
+
+Why recursion ?
+-> 1.   it helps us in solving bigger and complex problems in simple way
+   2.   You can convert recursion solutions into iteration and vise versa  (first solve with recursion and then convert into iteration to optimize it)
+   3.   Space Complexity is not constant bcs of recursive calls.
+   4.   breaking bigger problems into smaller problems.
+
+
+
+Visualizing Recursion : VVVVI    (Recursion Tree)
+
+         Program       main() ----------> Program Over
+         Starts          |    <---
+           |             V        |
+           |           print(1) --
+           |             |    <---
+           V             V        |
+           V           print(2) --
+                         |     <--
+                         V        |
+                       print(3) --
+                         |    <---
+                         V        |
+                       print(4) --
+
+
+
+
+Note : VVIMP
+
+How to Understand and approach a problem ?
+->
+1.  identify if you can break down the problems.
+2.  write the recurrence relation if needed.
+3.  Draw the recursion tree.
+4.  About the tree ->
+    1.  See the flow of functions, how they are getting in stack.
+    2.  Identify and focus on left tree calls and right tree calls.
+
+    (draw tree and pointers again and again using pen & paper.
+    use a debugger to see the flow.)
+5.  See how the values are returned at each step.
+    See where two function call will come out. In the end, you will come out of the main function.
+
+
+
+variables : VVVVVI
+Used three variables at a time.
+1.  Arguments
+2.  Return type
+3.  Body of function
+
+
+Q. Binary search with recursion.
+Comparisons -> Complexity -> O(1) = constant time
+Divide array into 2 half -> f(N/2)
+
+f(N) = O(1) + f(N/2)   -> Recursive Relation
+
+Types of Recursive Relation :
+1.  Linear recursive relation -> fibo
+2.  Divid
+
+
+
+
+
+
